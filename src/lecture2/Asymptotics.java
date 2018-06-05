@@ -4,8 +4,8 @@ package lecture2;
 public class Asymptotics {
 
     public static void main(String[] args){
-//        howFar(1000L);
-        run(5L);
+        howFar(1000L);
+//        run(400L);
     }
 
     public static void run(long n){
@@ -27,13 +27,13 @@ public class Asymptotics {
         cubed(n);
         System.out.println(elapsedTime(startTime) + "ms: cubed");
 
-        startTime = System.currentTimeMillis();
-        exponential(n);
-        System.out.println(elapsedTime(startTime) + "ms: exponential");
+//        startTime = System.currentTimeMillis();
+//        exponential(n);
+//        System.out.println(elapsedTime(startTime) + "ms: exponential");
 
-        startTime = System.currentTimeMillis();
-        factorial(n);
-        System.out.println(elapsedTime(startTime) + "ms: factorial");
+//        startTime = System.currentTimeMillis();
+//        factorial(n);
+//        System.out.println(elapsedTime(startTime) + "ms: factorial");
 
     }
 

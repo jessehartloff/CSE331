@@ -24,16 +24,16 @@ public class GaleShapelyAlgorithm implements StableMatchingAlgorithm {
             int proposeTo = currentWoman.getPreferenceByOrder(nextProposals[proposerID]++);
             Person man = stableMarriageProblem.getManByID(proposeTo);
 
-            System.out.print("Woman " + proposerID + " proposing to man " + proposeTo + " : ");
+//            System.out.print("Woman " + proposerID + " proposing to man " + proposeTo + " : ");
 
             if(man.getCurrentlyEngaged() == -1) {//man free
-                System.out.println("man free, got engaged");
+//                System.out.println("man free, got engaged");
                 man.setCurrentlyEngaged(proposerID);
                 currentWoman.setCurrentlyEngaged(proposeTo);
                 singleWomen.remove(currentWoman);
 
             }else if(man.getPreference(proposerID) < man.getPreferenceOfSpouse()){//man not free and proposer is better
-                System.out.println("man broke current engagement, got engaged");
+//                System.out.println("man broke current engagement, got engaged");
                 Person previousEngagement = stableMarriageProblem.getWomen().get(man.getCurrentlyEngaged());
                 previousEngagement.setCurrentlyEngaged(-1);
                 singleWomen.add(previousEngagement);
@@ -44,11 +44,11 @@ public class GaleShapelyAlgorithm implements StableMatchingAlgorithm {
 
             }else{//man not free and proposer is worse
                 //nothing happens
-                System.out.println("man rejected, woman still single");
+//                System.out.println("man rejected, woman still single");
             }
-            System.out.println();
-            stableMarriageProblem.printMatches();
-            System.out.println();
+//            System.out.println();
+//            stableMarriageProblem.printMatches();
+//            System.out.println();
         }
         System.out.println("Gale-Shapely executed in " + numberOfProposals + " proposals\n");
     }
