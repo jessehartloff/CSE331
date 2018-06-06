@@ -8,7 +8,6 @@ import java.util.Random;
  */
 public class Interval {
 
-
     private int startTime;
     private int endTime;
 
@@ -23,7 +22,6 @@ public class Interval {
     }
 
     public Interval(int startTime, int endTime){
-
         if(startTime >= endTime){
             System.out.println("You get a random interval");
             setRandom();
@@ -65,7 +63,6 @@ public class Interval {
     }
 
 
-
     public int getStartTime() {
         return startTime;
     }
@@ -81,6 +78,7 @@ public class Interval {
     public void setEndTime(int endTime) {
         this.endTime = endTime;
     }
+
 
     @Override
     public String toString() {

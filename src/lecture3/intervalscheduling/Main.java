@@ -31,11 +31,11 @@ public class Main {
             System.out.println("earliestStartTimeSolution is invalid");
         }
 
+
         System.out.println();
         System.out.println(earliestStartTimeSolution.size() + " intervals scheduled by earliest start time");
         System.out.println(shortestDurationSolution.size() + " intervals scheduled by shortest duration");
         System.out.println(earliestEndTimeSolution.size() + " intervals scheduled by earliest end time");
-
 
     }
 
