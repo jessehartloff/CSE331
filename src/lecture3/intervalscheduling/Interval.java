@@ -11,9 +11,9 @@ public class Interval {
     private int startTime;
     private int endTime;
 
-    private static final int THE_END_OF_TIME = 10000;
-    private static final double DURATION_MEAN = 200;
-    private static final double DURATION_SD = 25;
+    private static final int THE_END_OF_TIME = 100;
+    private static final double DURATION_MEAN = 15;
+    private static final double DURATION_SD = 10;
 
 
 
