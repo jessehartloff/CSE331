@@ -8,7 +8,7 @@ import java.util.*;
 /**
  * Created by jessehartloff on 5/11/15.
  */
-public class WeightedIntervalSchedulingProblem {
+public class WeightedIntervalSchedulingProblem{
 
     private Set<WeightedInterval> intervals;
     private int n;
@@ -16,7 +16,7 @@ public class WeightedIntervalSchedulingProblem {
     public WeightedIntervalSchedulingProblem(int n){
         this.n = n;
         this.intervals = new HashSet<>(n);
-        for (int i = 0; i < n; i++) {
+        for(int i = 0; i < n; i++){
             intervals.add(new WeightedInterval());
         }
     }
@@ -24,7 +24,6 @@ public class WeightedIntervalSchedulingProblem {
     public Set<WeightedInterval> getIntervals(){
         return intervals;
     }
-
 
 
     public boolean validateSolution(List<WeightedInterval> solutionSet){
@@ -58,7 +57,7 @@ public class WeightedIntervalSchedulingProblem {
 
 
     @Override
-    public String toString() {
+    public String toString(){
         return "intervals=" + intervals;
     }
 }
