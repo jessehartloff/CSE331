@@ -9,7 +9,7 @@ import graphs.Graph;
  */
 public class ShortestPathWithNegativesProblem {
 
-    private static final double DEFAULT_DENSITY = 0.5;
+    private static final double DEFAULT_DENSITY = 0.3;
     private static final int MIN_WEIGHT = -50;
     private static final int MAX_WEIGHT = 100;
     private int n;
